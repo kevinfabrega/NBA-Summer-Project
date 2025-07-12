@@ -22,4 +22,6 @@ df = df[df['Player'] != 'Player']
 
 df.head()
 
-De cara al procesament d'aquesta base de dades jo faria un recull de l'historial de gran part dels jugadors desde que eren rookies fins 2024 i predir el 2025 (tot i que la chaty per mirar l'estabilitat de les prediccions deia de fer diferents comprovacions de l'estil, fins 2022 i predir 2023; fins 2023 i predir 2024,...). Al google collab està l'exemple amb Lukita Doncic.
+De cara al procesament d'aquesta base de dades jo faria un recull de l'historial de gran part dels jugadors desde que eren rookies fins 
+2024 i predir el 2025 (tot i que la chaty per mirar l'estabilitat de les prediccions deia de fer diferents comprovacions de l'estil, 
+fins 2022 i predir 2023; fins 2023 i predir 2024,...). Al google collab està l'exemple amb Lukita Doncic.
