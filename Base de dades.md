@@ -1,0 +1,19 @@
+Primera posible base de dades:
+    https://www.basketball-reference.com/leagues/NBA_2024_per_game.html
+    Aquí dins es pot trobar per diverses temporades totes les estadístiques mitjes de la temporada normals, per 36 minuts, per 100 possesions, totals i avançades.
+    Sembla que de tots els jugadors.
+    El codi per extreure les dades està en el google collab, sembla que ho fa bé.(*) L'únic apunt és que els jugadors que canvien d'equip apareixen més d'un cop. Un amb cada equip on han estat
+    i un altre total d'ambos equips.
+    Aquesta base de dades estan treballades les dades amb els codis: https://www.kaggle.com/datasets/drgilermo/nba-players-stats/data
+    Però no sé si val la pena agafar les seves dades i treballar-les o extreure-les directament nosaltres.
+
+Segona posible:
+    https://github.com/swar/nba_api
+    S'hauria de mirar bé, però realment lo altre m'ha convençut bastant.
+
+(*)Exemple de recollida de dades
+
+url = 'https://www.basketball-reference.com/leagues/NBA_2024_per_game.html'
+df = pd.read_html(url)[0]
+df = df[df['Player'] != 'Player'] 
+df.head()
